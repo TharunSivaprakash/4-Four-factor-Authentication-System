@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Level Password Authentication</title>
+    <link rel="icon" href="images/fav1.jpg" type="image/gif" sizes="16x16">
+    <style>
+         body {
+            background: linear-gradient(to right, #2E3192, #1BFFFF), url("images/bgm6.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+            text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #eef4f4, 0 0 0px #00FFFF;
+            }
+
+            to {
+            text-shadow: 0 0 5px #fbe1e1, 0 0 10px #d7b3b3, 0 0 15px #FFFFFF, 0 0 20px #141313;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            position: relative;
+            top: -30px;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 22px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        ul li a:hover {
+            background-color: #00FFFF;
+            color: #000000;
+            border-bottom: 3px solid #FFFFFF;
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #00FFFF;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #ffffff;
+            max-width: 80%;
+            margin: auto;
+            text-align: justify;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        /* Button Design */
+        .button {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+            background-color: #000000;
+            border-radius: 12px;
+            border: 3px solid #00FFFF;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none; /* Removed underline */
+        }
+
+        .button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
+            transition: all 0.5s ease;
+            z-index: 1;
+        }
+
+        .button:hover:before {
+            left: 100%;
+        }
+
+        .button:hover {
+            background-color: #00FFFF;
+            color: #000000;
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .button span {
+            position: relative;
+            z-index: 2;
+        }
+
+        center {
+            padding-top: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <center>
+        <h1>THREE LEVEL PASSWORD AUTHENTICATION SYSTEM</h1>
+    </center><br><br>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signup.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+        
+    </ul>
+
+    <center>
+        <h2>ABOUT</h2>
+    </center><br>
+
+    <p>
+        The project is an authentication system that validates users for accessing the system only when they have input the correct password. The project involves three levels of user authentication. There are varieties of password systems available, many of which have failed due to bot attacks while few have sustained it but to a limit. In short, almost all the passwords available today can be broken into a limit.
+        <br><br>
+        Hence, we decided to design a project aimed to achieve the highest security in authenticating users. It contains three logins having three different kinds of password systems. The password difficulty increases with each level, and users have to input the correct password for a successful login. Users are given the privilege to set passwords according to their wishes.
+        <br><br>
+        The project comprises a text password (i.e., passphrase), a color-based pattern password, and a one-time password (OTP) sent to their registered email/mobile numbers for the three levels respectively. This way, there would be negligible chances of bots or anyone cracking the passwords. Even if they have cracked the first or second level, it would be impossible to crack the third one.
+        <br><br>
+        Many users find the most widespread text-based password systems unfriendly. So, in the case of the three-level password system, we tried to create a simple user interface and provide users with the best possible comfort in securing their passwords.
+    </p>
+
+</body>
+
+</html>
